@@ -63,4 +63,75 @@
 
 
 //--------------------5------------------------------------------------------
-//------------function scope----------------------------------------------
+//------------function scope-------------------------------------------------
+
+// let subject = 'create video';
+
+// function createThink(){
+//   subject = 'study'
+//   return subject
+// }
+
+// console.log(subject)
+// console.log(createThink())
+// console.log(subject)
+
+//--------------------6------------------------------------------------------
+//------------function hosting-------------------------------------------------
+
+// sayMyName();
+
+// function sayMyName() {
+//   console.log("Lucas")
+// }
+
+
+//--------------------7------------------------------------------------------
+//------------ arrow function -------------------------------------------------
+
+
+// const sayMyName = (name) => {
+//   console.log(name)
+// }
+
+// sayMyName("Lucas")
+
+//--------------------8------------------------------------------------------
+//------------callback function ---------------------------------------------
+
+// function sayMyName(name){
+//   console.log("antes de executar")
+
+//   name()
+
+//   console.log('depois de executar')
+// }
+
+// sayMyName( () => {
+//   console.log('executando')
+// })
+
+//--------------------9------------------------------------------------------
+//------------function constructor-------------------------------------------------
+
+/*
+  function() constructor
+
+  * expressão new;
+  * criar um novo objeto;
+  * this keyword 
+
+*/
+
+function Person(name) {
+  this.name= name
+  this.walk = function() {
+    return "andando"
+  }
+}
+
+const lucas = new Person("Lucas")
+const mayk = new Person("Mayk")
+
+console.log(mayk)
+console.log(lucas)
